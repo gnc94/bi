@@ -1,0 +1,16 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = dataset.copy()
+
+gender_counts = df['Gender'].value_counts()
+
+plt.figure(figsize=(6,6))
+plt.pie(gender_counts,
+        labels=gender_counts.index,
+        autopct='%1.1f%%',
+        startangle=90,
+        colors=['skyblue','lightgreen'])
+
+plt.title('Gender Distribution')
+plt.show()
