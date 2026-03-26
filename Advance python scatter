@@ -1,0 +1,12 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = dataset.copy()
+
+plt.scatter(df['StudentID'], df['StudentID'])
+
+plt.title('Student Scatter Plot')
+plt.xlabel('StudentID')
+plt.ylabel('StudentID')
+
+plt.show()
